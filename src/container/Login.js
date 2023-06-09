@@ -12,7 +12,7 @@ export default class Login extends Component {
        })
     })
     click=()=>{
-        axios.post("http://localhost:5000/store-employee",{username:this.state.email,password:this.state.password})
+        axios.post("https://backendapi-msfz.onrender.com/store",{username:this.state.email,password:this.state.password})
         .then((res)=>{
                      console.log(res)
                 })
